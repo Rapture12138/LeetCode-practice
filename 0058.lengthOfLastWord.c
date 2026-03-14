@@ -19,6 +19,5 @@ int lengthOfLastWord(char* s) {
         len++;
         p--;
     }
-
     return len;
 }
