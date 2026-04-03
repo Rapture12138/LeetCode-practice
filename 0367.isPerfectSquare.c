@@ -1,0 +1,13 @@
+bool isPerfectSquare(int num) {
+    long left = 0, right = num;
+
+    while (left != right) {
+        long mid = left + (right - left) / 2;
+        if (mid * mid >= num) {
+            right = mid;
+        } else {
+            left = mid + 1;
+        }
+    }
+    return left * left == num;
+}
